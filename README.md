@@ -42,14 +42,13 @@ There are four subdirectories:
 - figures
 - results
 
-Everything required for the chapter should be placed in subdirectories of these four. E.g. if chapter 2 require
 
 ### Naming convention
 
 The proposed convention here does not have to be adopted. It's just a suggestion for a possible naming scheme. __But__: Think about useful naming schemes, otherwise the repo might get very messy!
 
 - Chapters are saved in the home directory of the repository and have a prefix `xx-chapter-name.Rmd` (e.g. `01-about-linear-models.Rmd`)
-- Code, data, figures, and results are stored in the directories mentioned above in subdirectories that are named as the chapter itself. E.g. R code for the `01-about-linear-models.Rmd` is saved in `code/01-about-linaer-models/fit-linear-model.R`. The same holds for data, figures, and results.
+- Code, data, figures, and results are stored in the directories mentioned above in subdirectories that are named as the chapter itself. E.g. the R code `fit-linear-model.R` for the chapter `01-about-linear-models.Rmd` is saved in `code/01-about-linaer-models/fit-linear-model.R`. The same holds for data, figures, and results.
 
 ## Set up travis
 
