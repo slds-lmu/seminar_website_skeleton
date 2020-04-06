@@ -51,9 +51,14 @@ The proposed convention here does not have to be adopted. It's just a suggestion
 - Chapters are saved in the home directory of the repository and have a prefix `xx-chapter-name.Rmd` (e.g. `01-about-linear-models.Rmd`)
 - Code, data, figures, and results are stored in the directories mentioned above in subdirectories that are named as the chapter itself. E.g. R code for the `01-about-linear-models.Rmd` is saved in `code/01-about-linaer-models/fit-linear-model.R`. The same holds for data, figures, and results.
 
-### Set up travis
+## Set up travis
 
 - Create a new Branch `gh-pages`. This one should then automatically set as built branch in the settings.
+- Push something in the master to trigger the auto build.
+- Add a `GITHUB_PAT`:
+    - Add your github `user.email` and `user.name` in the  `_build.sh`
+    - Create a new or copy an existing token from github.com/settings/tokens
+    - Copy that token, go to settings on travis, and add a new environment variable with name `GITHUB_PAT` and insert the token
 
 ## How this book came about
 
