@@ -8,4 +8,3 @@ Depends:
   tidyverse,
   ggpubr,
   svglite,
-  rsample:

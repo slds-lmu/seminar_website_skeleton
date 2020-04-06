@@ -11,14 +11,14 @@ BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then echo $TRAVIS_BRANCH; else
 # Exit without set GITHUB_PAT
 [ -z "${GITHUB_PAT}"] && exit 0
 
-git config --global user.email "christoph.molnar@gmail.com"
-git config --global user.name "Christoph Molnar"
+git config --global user.email "d-schalk@t-online.de"
+git config --global user.name "Daniel Schalk"
 
 # Compile html version of book for gh-pages
 make -B pdf
 # Compile html version of book for gh-pages
 make -B epub
-# Compile html version 
+# Compile html version
 make -B html
 
 ## Only deploy when on master branch of main repository
@@ -40,7 +40,7 @@ if [  "$BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ] ; then
 
   # Now that we're all set up, we can push.
   git push origin $TARGET_BRANCH
-  
+
 else
   echo "Changes are not being deployed, since this is a fork / branch."
 fi

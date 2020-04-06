@@ -53,7 +53,7 @@ The proposed convention here does not have to be adopted. It's just a suggestion
 
 ### Set up travis
 
-
+- Create a new Branch `gh-pages`. This one should then automatically set as built branch in the settings.
 
 ## How this book came about
 
