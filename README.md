@@ -52,7 +52,7 @@ The proposed convention here does not have to be adopted. It's just a suggestion
 
 ## Set up GitHub actions
 
-- [Optional when created from template] Create a new Branch `gh-pages`. This one should then automatically set as built branch in the settings.
+- Create a new Branch `gh-pages`. This one should then automatically set as built branch in the settings.
 - Push something in the master to trigger the auto build.
 - Add a valid email in `.github/workflows/deploy-bookdown.yaml`
 
