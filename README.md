@@ -5,7 +5,7 @@
 This skeleton was design by using the [Limitations of Interpretable Machine Learning Methods seminar](https://github.com/compstat-lmu/iml_methods_limitations) as template.
 
 1. Create a new repository for your seminar.
-1. Download, clone, whatever the files from the skeleton repo (this repo) and copy all files except the `.git` folder.
+1. Download, clone, whatever the files from the skeleton repo (this repo) and copy all files except the `.git` folder (or select `seminar_website_skeleton` as template when creating a new repository).
 1. Update `DESCRIPTION`:
     - Adjust `Package` with your seminar name
     - Adjust `Title` with your title
@@ -50,14 +50,11 @@ The proposed convention here does not have to be adopted. It's just a suggestion
 - Chapters are saved in the home directory of the repository and have a prefix `xx-chapter-name.Rmd` (e.g. `01-about-linear-models.Rmd`)
 - Code, data, figures, and results are stored in the directories mentioned above in subdirectories that are named as the chapter itself. E.g. the R code `fit-linear-model.R` for the chapter `01-about-linear-models.Rmd` is saved in `code/01-about-linaer-models/fit-linear-model.R`. The same holds for data, figures, and results.
 
-## Set up travis
+## Set up GitHub actions
 
-- Create a new Branch `gh-pages`. This one should then automatically set as built branch in the settings.
+- [Optional when created from template] Create a new Branch `gh-pages`. This one should then automatically set as built branch in the settings.
 - Push something in the master to trigger the auto build.
-- Add a `GITHUB_PAT`:
-    - Add your github `user.email` and `user.name` in the  `_build.sh`
-    - Create a new or copy an existing token from github.com/settings/tokens
-    - Copy that token, go to settings on travis, and add a new environment variable with name `GITHUB_PAT` and insert the token
+- Add a valid email in `.github/workflows/deploy-bookdown.yaml`
 
 ## How this book came about
 
